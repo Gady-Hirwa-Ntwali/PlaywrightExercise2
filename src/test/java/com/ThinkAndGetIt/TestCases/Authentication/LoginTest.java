@@ -13,38 +13,27 @@ import static org.testng.Assert.assertEquals;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void loginTest(){
+    public void SuccessfulTest(){
         String expectedUrl = properties.getProperty("baseUrl") + HOME;
         LoginMethods.loginForm(page, properties.getProperty("email"), properties.getProperty("password"));
+        page.waitForURL("**/home");
         assertEquals(page.url(), expectedUrl);
     }
 
     @Test
     public void loginTestWithInvalidEmail(){
-        Locator navigateToLoginPage = page.locator("//a[normalize-space()='Sign in']");
-        navigateToLoginPage.click();
-        Locator email = page.locator("input[type='email']");
-        email.fill("akdsjflksd@tdksjlkf.com");
-        Locator password = page.locator("input[type='password']");
-        password.fill("Admin@123456");
-        Locator signIn = page.locator("button[type='submit']");
-        signIn.click();
-        page.waitForTimeout(15000);
-        assertEquals(page.url(), "https://think-and-get-it-frontend.onrender.com/login");
+        String expectedUrl = properties.getProperty("baseUrl");
+        LoginMethods.loginForm(page, "kldjflk@gmail.com", properties.getProperty("password"));
+        page.waitForTimeout(5000);
+        assertEquals(page.url(), expectedUrl);
     }
 
     @Test
     public void loginTestWithInvalidPassword(){
-        Locator navigateToLoginPage = page.locator("//a[normalize-space()='Sign in']");
-        navigateToLoginPage.click();
-        Locator email = page.locator("input[type='email']");
-        email.fill("akdsjflksd@tdksjlkf.com");
-        Locator password = page.locator("input[type='password']");
-        password.fill("Admin@123456klsjdlkfjoeilkjfdsoids");
-        Locator signIn = page.locator("button[type='submit']");
-        signIn.click();
-        page.waitForTimeout(15000);
-        assertEquals(page.url(), "https://think-and-get-it-frontend.onrender.com/login");
+        String expectedUrl = properties.getProperty("baseUrl");
+        LoginMethods.loginForm(page, properties.getProperty("email"), "dlskjflks");
+        page.waitForTimeout(5000);
+        assertEquals(page.url(), expectedUrl);
     }
 
 }

@@ -8,9 +8,9 @@ public class LoginMethods {
         Locator navigateToLoginPage = page.locator("//a[normalize-space()='Sign in']");
         navigateToLoginPage.click();
         Locator Email = page.locator("input[type='email']");
-        Email.fill("admin@thinkandgetit.com");
+        Email.fill(email);
         Locator Password = page.locator("input[type='password']");
-        Password.fill("Admin@123456");
+        Password.fill(password);
         Locator signIn = page.locator("button[type='submit']");
         signIn.click();
     }
