@@ -32,23 +32,10 @@ public class FilterProductByPriceAndTime extends BaseTest {
 
     @Test
     public void byPriceLow(){
-        String Url = properties.getProperty("baseUrl") + Product;
-        page.navigate(Url);
-        page.getByRole(AriaRole.COMBOBOX).selectOption("price_asc");
-        page.waitForTimeout(3000);
 
-        List<String> uiPrices = page.locator("a.group.card-hover div.flex.items-center.gap-2 span.font-display").allInnerTexts();
-
-        System.out.println("Extracted UI Text Elements: " + uiPrices);
-
-        List<Double> browserOrder = new ArrayList<>();
-        for (String price : uiPrices) {
-            String cleanPrice = price.replace("$", "").replace(",", "").trim();
-            browserOrder.add(Double.parseDouble(cleanPrice));
-        }
-        List<Double> localOrder = new ArrayList<>(browserOrder);
-
+        OrderProductMethods.byPrice(page, "price_asc");
         Collections.sort(localOrder);
+
         System.out.println("Expected Local Sorted Order: " + localOrder);
         System.out.println("Actual Browser Visual Order: " + browserOrder);
         page.waitForTimeout(7000);
