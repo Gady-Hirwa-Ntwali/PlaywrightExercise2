@@ -9,8 +9,8 @@ import org.testng.annotations.BeforeMethod;
 import java.util.Properties;
 
 public class BaseTest {
-    public Properties properties;
-    public Page page;
+    public static Properties properties;
+    public static Page page;
 
     @BeforeMethod
     public void baseTest(){
