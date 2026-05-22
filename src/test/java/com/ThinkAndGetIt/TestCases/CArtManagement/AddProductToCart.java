@@ -9,7 +9,7 @@ import static com.ThinkAndGetIt.EndPoints.EndPoints.Product;
 
 public class AddProductToCart extends BaseTest {
     @Test
-    public void addSingleItem(){
+    public static void addSingleItem(){
         page.navigate(properties.getProperty("baseUrl") + Product);
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Quick Add")).first().click();
     }
