@@ -17,6 +17,7 @@ public class BaseTest {
         properties = Utils.loadProperties("src/test/resources/Config.properties");
         page = Playwright.create().chromium().launch(
                 new BrowserType.LaunchOptions().setHeadless(false)
+                .setSlowMo(800)
         ).newPage();
         page.navigate(properties.getProperty("baseUrl"));
     }
