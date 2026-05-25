@@ -1,6 +1,7 @@
 package com.ThinkAndGetIt.TestCases.Checkout;
 
 import com.ThinkAndGetIt.Base.BaseTest;
+import com.ThinkAndGetIt.TestCases.Authentication.CreateAccountTest;
 import com.ThinkAndGetIt.TestCases.Authentication.LoginTest;
 import com.ThinkAndGetIt.TestCases.CArtManagement.AddProductToCart;
 import com.microsoft.playwright.Locator;
