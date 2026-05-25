@@ -25,7 +25,11 @@ public class NavigationTests extends BaseTest {
         page.getByRole(AriaRole.BUTTON).nth(1).click();
     }
 
-    public void navigateToCheckout(){
+    public static void navigateToCheckout(){
         navigate(Checkout);
+    }
+
+    public static void navigateToLogin(){
+        navigate(Login);
     }
 }

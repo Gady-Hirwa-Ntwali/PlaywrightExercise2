@@ -5,4 +5,5 @@ public class EndPoints {
     public static final String Product = "products";
     public static final String Cart = "cart";
     public static final String Checkout = "checkout";
+    public static final String Login = "login";
 }
