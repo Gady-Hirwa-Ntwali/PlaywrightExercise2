@@ -13,7 +13,7 @@ import static org.testng.Assert.assertEquals;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void SuccessfulTest(){
+    public static void SuccessfulTest(){
         String expectedUrl = properties.getProperty("baseUrl") + HOME;
         LoginMethods.loginForm(page, properties.getProperty("email"), properties.getProperty("password"));
         page.waitForURL("**/home");
