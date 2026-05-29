@@ -44,7 +44,8 @@ public class PaymentPage {
         back.click();
     }
 
-    public void clickReviewOrder(){
+    public PlaceOrder clickReviewOrder(){
         reviewOrder.click();
+        return new PlaceOrder(page);
     }
 }
