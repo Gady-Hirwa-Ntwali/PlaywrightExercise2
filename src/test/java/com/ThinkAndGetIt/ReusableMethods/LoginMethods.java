@@ -1,9 +1,9 @@
-package com.ThinkAndGetItFrontEnd.ReusableMethods;
+package com.ThinkAndGetIt.ReusableMethods;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
-import static com.ThinkAndGetItFrontEnd.TestCases.Navigation.NavigationTests.navigateToLogin;
+import static com.ThinkAndGetIt.TestCases.Navigation.NavigationTests.navigateToLogin;
 
 public class LoginMethods {
     public static void loginForm(Page page, String email, String password){

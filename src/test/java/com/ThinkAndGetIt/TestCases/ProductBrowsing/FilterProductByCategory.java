@@ -1,11 +1,11 @@
-package com.ThinkAndGetItFrontEnd.TestCases.ProductBrowsing;
+package com.ThinkAndGetIt.TestCases.ProductBrowsing;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
+import com.ThinkAndGetIt.Base.BaseTest;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static com.ThinkAndGetItFrontEnd.TestCases.Navigation.NavigationTests.navigateToProduct;
+import static com.ThinkAndGetIt.TestCases.Navigation.NavigationTests.navigateToProduct;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

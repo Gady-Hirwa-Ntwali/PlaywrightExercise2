@@ -1,12 +1,12 @@
-package com.ThinkAndGetItFrontEnd.TestCases.ProductBrowsing;
+package com.ThinkAndGetIt.TestCases.ProductBrowsing;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
-import com.ThinkAndGetItFrontEnd.ReusableMethods.OrderProductMethods;
+import com.ThinkAndGetIt.Base.BaseTest;
+import com.ThinkAndGetIt.ReusableMethods.OrderProductMethods;
 import org.testng.annotations.Test;
 
 import java.util.Collections;
 
-import static com.ThinkAndGetItFrontEnd.ReusableMethods.OrderProductMethods.*;
+import static com.ThinkAndGetIt.ReusableMethods.OrderProductMethods.*;
 import static org.testng.Assert.assertEquals;
 public class FilterProductByPriceAndTime extends BaseTest {
     @Test

@@ -1,9 +1,9 @@
-package com.ThinkAndGetItFrontEnd.TestCases.Navigation;
+package com.ThinkAndGetIt.TestCases.Navigation;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
+import com.ThinkAndGetIt.Base.BaseTest;
 import com.microsoft.playwright.options.AriaRole;
 
-import static com.ThinkAndGetItFrontEnd.EndPoints.EndPoints.*;
+import static com.ThinkAndGetIt.EndPoints.EndPoints.*;
 
 public class NavigationTests extends BaseTest {
     public static void navigate(String endpoint){

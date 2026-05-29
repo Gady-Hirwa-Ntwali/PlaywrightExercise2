@@ -1,14 +1,13 @@
-package com.ThinkAndGetItFrontEnd.TestCases.Checkout;
+package com.ThinkAndGetIt.TestCases.Checkout;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
-import com.ThinkAndGetItFrontEnd.TestCases.Authentication.CreateAccountTest;
-import com.ThinkAndGetItFrontEnd.TestCases.Authentication.LoginTest;
-import com.ThinkAndGetItFrontEnd.TestCases.CArtManagement.AddProductToCart;
+import com.ThinkAndGetIt.Base.BaseTest;
+import com.ThinkAndGetIt.TestCases.Authentication.LoginTest;
+import com.ThinkAndGetIt.TestCases.CArtManagement.AddProductToCart;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
 
-import static com.ThinkAndGetItFrontEnd.EndPoints.EndPoints.Login;
+import static com.ThinkAndGetIt.EndPoints.EndPoints.Login;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.testng.Assert.assertTrue;
 

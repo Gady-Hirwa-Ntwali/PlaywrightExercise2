@@ -1,4 +1,4 @@
-package com.ThinkAndGetItFrontEnd.Utilities;
+package com.ThinkAndGetIt.Utilities;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

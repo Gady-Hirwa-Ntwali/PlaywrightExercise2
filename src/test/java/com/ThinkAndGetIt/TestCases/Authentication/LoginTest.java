@@ -1,10 +1,10 @@
-package com.ThinkAndGetItFrontEnd.TestCases.Authentication;
+package com.ThinkAndGetIt.TestCases.Authentication;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
-import com.ThinkAndGetItFrontEnd.ReusableMethods.LoginMethods;
+import com.ThinkAndGetIt.Base.BaseTest;
+import com.ThinkAndGetIt.ReusableMethods.LoginMethods;
 import org.testng.annotations.Test;
 
-import static com.ThinkAndGetItFrontEnd.EndPoints.EndPoints.HOME;
+import static com.ThinkAndGetIt.EndPoints.EndPoints.HOME;
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static org.testng.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package com.ThinkAndGetItFrontEnd.ReusableMethods;
+package com.ThinkAndGetIt.ReusableMethods;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;

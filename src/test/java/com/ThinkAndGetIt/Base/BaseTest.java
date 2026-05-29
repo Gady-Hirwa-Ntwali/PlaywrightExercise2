@@ -1,6 +1,6 @@
-package com.ThinkAndGetItFrontEnd.Base;
+package com.ThinkAndGetIt.Base;
 
-import com.ThinkAndGetItFrontEnd.Utilities.Utils;
+import com.ThinkAndGetIt.Utilities.Utils;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;

@@ -1,9 +1,9 @@
-package com.ThinkAndGetItFrontEnd.TestCases.Authentication;
+package com.ThinkAndGetIt.TestCases.Authentication;
 
-import com.ThinkAndGetItFrontEnd.Base.BaseTest;
+import com.ThinkAndGetIt.Base.BaseTest;
 import org.testng.annotations.Test;
-import static com.ThinkAndGetItFrontEnd.EndPoints.EndPoints.HOME;
-import static com.ThinkAndGetItFrontEnd.ReusableMethods.CreateAccountMethods.createAccountForm;
+import static com.ThinkAndGetIt.EndPoints.EndPoints.HOME;
+import static com.ThinkAndGetIt.ReusableMethods.CreateAccountMethods.createAccountForm;
 import static org.testng.Assert.assertEquals;
 
 public class CreateAccountTest extends BaseTest {
