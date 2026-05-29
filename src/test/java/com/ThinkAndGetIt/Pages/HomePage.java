@@ -12,6 +12,7 @@ public class HomePage {
     private final Locator flash;
     private final Locator feature;
     private final Locator search;
+    private final Locator cartBtn;
 
     public HomePage(Page page) {
         this.page = page;
@@ -21,6 +22,8 @@ public class HomePage {
         this.flash = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("⚡ Flash"));
         this.feature = page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Featured"));
         this.search = page.getByRole(AriaRole.BUTTON).first();
+        this.cartBtn =  page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("1"));
+
     }
 
     public ProductsPage clickShopNow() {
@@ -50,5 +53,10 @@ public class HomePage {
 
     public void clickSearchIcon() {
         search.click();
+    }
+
+    public CartPage clickCartButton(){
+        cartBtn.click();
+        return new CartPage(page);
     }
 }
