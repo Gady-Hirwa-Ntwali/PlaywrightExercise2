@@ -1,10 +1,10 @@
 package com.ThinkAndGetIt.Pages;
+
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 
 public class HomePage {
-    // 1. Declare the Page and Locators at the class level
     private final Page page;
     private final Locator shopNow;
     private final Locator flashDeal;
@@ -26,5 +26,29 @@ public class HomePage {
     public ProductsPage clickShopNow() {
         shopNow.click();
         return new ProductsPage(page);
+    }
+
+    public ProductsPage clickShop() {
+        shop.click();
+        return new ProductsPage(page);
+    }
+
+    public ProductsPage clickFlashDeals() {
+        flashDeal.click();
+        return new ProductsPage(page);
+    }
+
+    public ProductsPage clickFlash() {
+        flash.click();
+        return new ProductsPage(page);
+    }
+
+    public ProductsPage clickFeatured() {
+        feature.click();
+        return new ProductsPage(page);
+    }
+
+    public void clickSearchIcon() {
+        search.click();
     }
 }
