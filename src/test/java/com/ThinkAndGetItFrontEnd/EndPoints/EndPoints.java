@@ -1,4 +1,4 @@
-package com.ThinkAndGetIt.EndPoints;
+package com.ThinkAndGetItFrontEnd.EndPoints;
 
 public class EndPoints {
     public static final String HOME = "home";

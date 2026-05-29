@@ -1,19 +1,12 @@
-package com.ThinkAndGetIt.TestCases.ProductBrowsing;
+package com.ThinkAndGetItFrontEnd.TestCases.ProductBrowsing;
 
-import com.ThinkAndGetIt.Base.BaseTest;
-import com.ThinkAndGetIt.ReusableMethods.OrderProductMethods;
-import com.microsoft.playwright.Locator;
-import com.microsoft.playwright.options.AriaRole;
-import com.microsoft.playwright.options.SelectOption;
+import com.ThinkAndGetItFrontEnd.Base.BaseTest;
+import com.ThinkAndGetItFrontEnd.ReusableMethods.OrderProductMethods;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
-import static com.ThinkAndGetIt.EndPoints.EndPoints.Product;
-import static com.ThinkAndGetIt.ReusableMethods.OrderProductMethods.*;
+import static com.ThinkAndGetItFrontEnd.ReusableMethods.OrderProductMethods.*;
 import static org.testng.Assert.assertEquals;
 public class FilterProductByPriceAndTime extends BaseTest {
     @Test

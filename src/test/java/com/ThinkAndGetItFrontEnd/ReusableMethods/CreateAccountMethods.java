@@ -1,6 +1,5 @@
-package com.ThinkAndGetIt.ReusableMethods;
+package com.ThinkAndGetItFrontEnd.ReusableMethods;
 
-import com.ThinkAndGetIt.Base.BaseTest;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 

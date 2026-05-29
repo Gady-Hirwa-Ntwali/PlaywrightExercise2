@@ -1,6 +1,6 @@
-package com.ThinkAndGetIt.ReusableMethods;
+package com.ThinkAndGetItFrontEnd.ReusableMethods;
 
-import com.ThinkAndGetIt.Base.BaseTest;
+import com.ThinkAndGetItFrontEnd.Base.BaseTest;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
@@ -8,7 +8,7 @@ import com.microsoft.playwright.options.AriaRole;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.ThinkAndGetIt.EndPoints.EndPoints.Product;
+import static com.ThinkAndGetItFrontEnd.EndPoints.EndPoints.Product;
 
 public class OrderProductMethods extends BaseTest {
     public static List<Double> browserOrder = new ArrayList<>();
