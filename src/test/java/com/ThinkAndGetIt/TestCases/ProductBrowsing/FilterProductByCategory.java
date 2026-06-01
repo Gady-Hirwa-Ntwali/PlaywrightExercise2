@@ -16,9 +16,9 @@ public class FilterProductByCategory extends BaseTest {
         page.navigate(Url);
         page.locator("//button[normalize-space()='Bags & Luggage']").click();
         page.waitForTimeout(5000);
-        List<String> bags = page.locator("a div p").allInnerTexts();
-        System.out.println(bags);
-        for (String itemName : bags) {
+        List<String> category = page.locator("a div p").allInnerTexts();
+        System.out.println(category);
+        for (String itemName : category) {
             String normalizedName = itemName.toLowerCase();
             assertTrue(
                     normalizedName.contains("bag"),
