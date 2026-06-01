@@ -45,7 +45,7 @@ public class SearchTests extends BaseTest {
             String normalizedName = itemName.toLowerCase();
             assertTrue(
                     normalizedName.contains("shorts"),
-                    "not bags only in here! Found an invalid item named: " + itemName
+                    "not shorts only in here! Found an invalid item named: " + itemName
             );
         }
     }
