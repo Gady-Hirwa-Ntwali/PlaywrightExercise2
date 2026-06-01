@@ -32,19 +32,19 @@ public class SearchTests extends BaseTest {
     }
 
     @Test
-    public void searchBag(){
+    public void searchShorts(){
         String Url = properties.getProperty("baseUrl") + Product;
         page.navigate(Url);
         page.getByRole(AriaRole.BUTTON).first().click();
-        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search products, brands,")).fill("bag");
+        page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search products, brands,")).fill("shorts");
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search products, brands,")).press("Enter");
         page.waitForTimeout(3000);
-        List<String> category = page.locator("a div p").allInnerTexts();
+        List<String> category = page.locator("a div h3").allInnerTexts();
         System.out.println(category);
         for (String itemName : category) {
             String normalizedName = itemName.toLowerCase();
             assertTrue(
-                    normalizedName.contains("bag"),
+                    normalizedName.contains("shorts"),
                     "not bags only in here! Found an invalid item named: " + itemName
             );
         }
