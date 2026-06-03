@@ -9,14 +9,15 @@ import org.testng.annotations.BeforeMethod;
 import java.util.Properties;
 
 public class BaseTest {
-    public Properties properties;
-    public Page page;
+    public static Properties properties;
+    public static Page page;
 
     @BeforeMethod
     public void baseTest(){
         properties = Utils.loadProperties("src/test/resources/Config.properties");
         page = Playwright.create().chromium().launch(
                 new BrowserType.LaunchOptions().setHeadless(false)
+                .setSlowMo(800)
         ).newPage();
         page.navigate(properties.getProperty("baseUrl"));
     }

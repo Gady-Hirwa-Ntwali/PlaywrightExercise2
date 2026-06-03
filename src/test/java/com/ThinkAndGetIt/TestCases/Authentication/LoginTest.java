@@ -1,9 +1,7 @@
 package com.ThinkAndGetIt.TestCases.Authentication;
 
 import com.ThinkAndGetIt.Base.BaseTest;
-import com.ThinkAndGetIt.EndPoints.EndPoints;
 import com.ThinkAndGetIt.ReusableMethods.LoginMethods;
-import com.microsoft.playwright.Locator;
 import org.testng.annotations.Test;
 
 import static com.ThinkAndGetIt.EndPoints.EndPoints.HOME;
@@ -13,7 +11,7 @@ import static org.testng.Assert.assertEquals;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void SuccessfulTest(){
+    public static void SuccessfulTest(){
         String expectedUrl = properties.getProperty("baseUrl") + HOME;
         LoginMethods.loginForm(page, properties.getProperty("email"), properties.getProperty("password"));
         page.waitForURL("**/home");
