@@ -12,8 +12,6 @@ import java.util.Properties;
 public class BaseTest {
     public static Properties properties;
     public static Page page;
-    //test yml file
-
     @BeforeClass
     public void baseTest(){
         properties = Utils.loadProperties("src/test/resources/Config.properties");
