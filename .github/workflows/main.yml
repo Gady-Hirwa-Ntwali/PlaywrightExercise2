@@ -52,5 +52,5 @@ jobs:
         run: |
           mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"
 
-      - name: Run tests
-        run: mvn clean test -Dtest=com.ThinkAndGetIt.TestCases.**.*
+      - name: Run tests via TestNG Suite
+        run: mvn clean test -DsuiteXmlFile=testng.xml
