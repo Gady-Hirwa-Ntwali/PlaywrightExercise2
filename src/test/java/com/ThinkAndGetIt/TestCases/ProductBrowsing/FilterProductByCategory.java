@@ -10,6 +10,7 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 import java.util.regex.Pattern;
 
 public class FilterProductByCategory extends BaseTest {
+    /.
     private ProductsPage navigateToProductsPage() {
         page.navigate(properties.getProperty("baseUrl") +EndPoints.HOME);
         HomePage homePage = new HomePage(page);
@@ -60,3 +61,4 @@ public class FilterProductByCategory extends BaseTest {
     }
 
 }
+//raise issue on github
